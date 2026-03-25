@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ミルログ - 授乳管理アプリ</title>
+  <meta name="description" content="声ひとつで、ミルク記録。手が塞がっていても、Siriで即記録できる赤ちゃんの授乳管理アプリ。">
+  <meta property="og:title" content="ミルログ - 授乳管理アプリ">
+  <meta property="og:description" content="声ひとつで、ミルク記録。手が塞がっていても、Siriで即記録できる赤ちゃんの授乳管理アプリ。">
+  <meta property="og:image" content="./assets/images/icon.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="./assets/images/icon.png" type="image/png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+
+  <!-- Global Nav -->
+  <header class="global-nav">
+    <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav-menu">
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+      <span class="hamburger__line"></span>
+    </button>
+    <nav class="nav-menu" id="nav-menu" aria-hidden="true">
+      <a href="#" class="nav-menu__item" id="nav-store">App Storeでダウンロード</a>
+      <a href="./privacy/" class="nav-menu__item">プライバシーポリシー</a>
+      <a href="https://docs.google.com/forms/d/e/1FAIpQLSebXE-oB0zj7e1wwz9V6bgFZXMlNq-PU2ME0EX8Ns8LvLQyqw/viewform"
+        target="_blank" rel="noopener noreferrer" class="nav-menu__item">お問い合わせ</a>
+    </nav>
+  </header>
+  <div class="nav-overlay" id="nav-overlay"></div>
+
+  <!-- Hero -->
+  <section class="hero">
+    <div class="hero__inner container">
+      <div class="hero__text">
+        <div class="hero__brand">
+          <img src="./assets/images/icon.png" alt="ミルログ アイコン" class="hero__app-icon">
+          <span class="hero__app-name">ミルログ</span>
+        </div>
+        <h1 class="hero__catch">声ひとつで、<br>ミルク記録。</h1>
+        <p class="hero__sub">手が塞がっていても、Siriで即記録できる<br>赤ちゃんの授乳管理アプリ</p>
+        <a href="#" class="btn-badge" aria-label="App Storeからダウンロード">
+          <img src="./assets/images/appstore-badge.svg" alt="Download on the App Store" class="appstore-badge">
+        </a>
+      </div>
+      <div class="hero__mockup">
+        <div class="phone-frame">
+          <img src="./assets/images/screenshots/today.png" alt="ミルログ 今日の記録画面">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Problem -->
+  <section class="problem">
+    <div class="container">
+      <h2 class="section-title">こんな経験、ありませんか？</h2>
+      <div class="problem__grid">
+        <div class="problem__card">
+          <div class="problem__icon-wrap">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <path d="M10 14c0-3.3 2.7-6 6-6s6 2.7 6 6v4c0 1.1-.9 2-2 2h-8c-1.1 0-2-.9-2-2v-4z" />
+              <path d="M13 20v2a3 3 0 006 0v-2" />
+              <path d="M16 6V4M8 10l-2-2M24 10l2-2" />
+            </svg>
+          </div>
+          <p>記録したいのに赤ちゃんを抱っこ中で<br>両手が塞がっている...</p>
+        </div>
+        <div class="problem__card">
+          <div class="problem__icon-wrap">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <circle cx="16" cy="16" r="11" />
+              <path d="M16 9v7l5 3" stroke-linecap="round" />
+            </svg>
+          </div>
+          <p>深夜の授乳で<br>すぐに入力する余裕がない...</p>
+        </div>
+        <div class="problem__card">
+          <div class="problem__icon-wrap">
+            <svg viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="1.5" aria-hidden="true">
+              <rect x="5" y="6" width="22" height="20" rx="3" />
+              <path d="M5 12h22M11 6v4M21 6v4M10 18h5M10 22h8" />
+            </svg>
+          </div>
+          <p>記録をし忘れて<br>次の授乳がいつか分からない...</p>
+        </div>
+      </div>
+      <p class="problem__resolve">ミルログなら、<strong>声だけで記録。次回は自動でお知らせ。</strong></p>
+    </div>
+  </section>
+
+  <!-- Features -->
+  <section class="features">
+    <div class="container">
+      <h2 class="section-title">主な機能</h2>
+
+      <div class="feature">
+        <div class="feature__body">
+          <span class="feature__num">01</span>
+          <h3 class="feature__title">Siriで声ひとつ記録</h3>
+          <p class="feature__desc">「Hey Siri、ミルログでミルク120ミリ」のひと言で記録完了。抱っこ中も、深夜も、手を使わずに記録できます。タップ入力派にも、よく使う量のプリセットで素早く対応。
+          </p>
+        </div>
+        <div class="feature__screen">
+          <div class="phone-frame phone-frame--sm">
+            <img src="./assets/images/screenshots/quickadd.png" alt="クイック入力画面">
+          </div>
+        </div>
+      </div>
+
+      <div class="feature feature--reverse">
+        <div class="feature__body">
+          <span class="feature__num">02</span>
+          <h3 class="feature__title">今日の状況をひと目で</h3>
+          <p class="feature__desc">合計量・最後の授乳時刻・次回通知時刻を一画面に集約。タイムラインで当日の記録を時系列で確認。タップで編集、長押しで削除と、操作も直感的です。</p>
+        </div>
+        <div class="feature__screen">
+          <div class="phone-frame phone-frame--sm">
+            <img src="./assets/images/screenshots/today.png" alt="今日の記録画面">
+          </div>
+        </div>
+      </div>
+
+      <div class="feature">
+        <div class="feature__body">
+          <span class="feature__num">03</span>
+          <h3 class="feature__title">次の授乳を自動通知</h3>
+          <p class="feature__desc">直近の授乳間隔から次回のタイミングを自動計算して通知。子どもごとに個別スケジュールで管理するから、複数のお子さまがいても安心です。</p>
+        </div>
+        <div class="feature__screen">
+          <div class="phone-frame phone-frame--sm">
+            <img src="./assets/images/screenshots/today.png" alt="次回通知表示">
+          </div>
+        </div>
+      </div>
+
+      <div class="feature feature--reverse">
+        <div class="feature__body">
+          <span class="feature__num">04</span>
+          <h3 class="feature__title">週ごとにふりかえり</h3>
+          <p class="feature__desc">週間カレンダーと授乳量チャートで傾向を把握。ミルクだけでなく、母乳・混合にも対応。1日ごとのメモや気分も記録できる「ひとくちメモ」つき。</p>
+        </div>
+        <div class="feature__screen">
+          <div class="phone-frame phone-frame--sm">
+            <img src="./assets/images/screenshots/history.png" alt="ふりかえり画面">
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta-section">
+    <div class="container">
+      <img src="./assets/images/icon.png" alt="ミルログ" class="cta-section__icon">
+      <h2 class="cta-section__title">今日から記録をはじめよう</h2>
+      <p class="cta-section__sub">無料でダウンロードできます</p>
+      <a href="#" class="btn-badge" aria-label="App Storeからダウンロード">
+        <img src="./assets/images/appstore-badge.svg" alt="Download on the App Store" class="appstore-badge">
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p class="footer__name">ミルログ</p>
+      <nav class="footer__nav" aria-label="フッターナビゲーション">
+        <a href="./privacy/">プライバシーポリシー</a>
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSebXE-oB0zj7e1wwz9V6bgFZXMlNq-PU2ME0EX8Ns8LvLQyqw/viewform"
+          target="_blank" rel="noopener noreferrer">お問い合わせ</a>
+      </nav>
+      <p class="footer__copy">&copy; 2026 ミルログ</p>
+    </div>
+  </footer>
+
+  <script>
+    const hamburger = document.getElementById('hamburger');
+    const menu = document.getElementById('nav-menu');
+    const overlay = document.getElementById('nav-overlay');
+
+    function openMenu() {
+      hamburger.classList.add('is-open');
+      menu.classList.add('is-open');
+      overlay.classList.add('is-open');
+      hamburger.setAttribute('aria-expanded', 'true');
+      menu.setAttribute('aria-hidden', 'false');
+    }
+
+    function closeMenu() {
+      hamburger.classList.remove('is-open');
+      menu.classList.remove('is-open');
+      overlay.classList.remove('is-open');
+      hamburger.setAttribute('aria-expanded', 'false');
+      menu.setAttribute('aria-hidden', 'true');
+    }
+
+    hamburger.addEventListener('click', () => {
+      hamburger.classList.contains('is-open') ? closeMenu() : openMenu();
+    });
+
+    overlay.addEventListener('click', closeMenu);
+
+    menu.querySelectorAll('.nav-menu__item').forEach(item => {
+      item.addEventListener('click', closeMenu);
+    });
+  </script>
+
+</body>
+
+</html>
