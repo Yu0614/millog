@@ -30,13 +30,21 @@
 
   <!-- Global Nav -->
   <header class="global-nav">
+    <button class="theme-toggle" id="theme-toggle" aria-label="ダークモード切替">
+      <svg class="theme-toggle__sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+        <circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M2 12h2M20 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>
+      </svg>
+      <svg class="theme-toggle__moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+        <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
+      </svg>
+    </button>
     <button class="hamburger" id="hamburger" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav-menu">
       <span class="hamburger__line"></span>
       <span class="hamburger__line"></span>
       <span class="hamburger__line"></span>
     </button>
     <nav class="nav-menu" id="nav-menu" aria-hidden="true">
-      <a href="#" class="nav-menu__item" id="nav-store">App Storeでダウンロード</a>
+      <a href="https://apps.apple.com/app/id6761168385" target="_blank" rel="noopener noreferrer" class="nav-menu__item" id="nav-store">App Storeでダウンロード</a>
       <a href="./privacy/" class="nav-menu__item">プライバシーポリシー</a>
       <a href="https://docs.google.com/forms/d/e/1FAIpQLSebXE-oB0zj7e1wwz9V6bgFZXMlNq-PU2ME0EX8Ns8LvLQyqw/viewform"
         target="_blank" rel="noopener noreferrer" class="nav-menu__item">お問い合わせ</a>
@@ -54,13 +62,13 @@
         </div>
         <h1 class="hero__catch">声ひとつで、<br>ミルク記録。</h1>
         <p class="hero__sub">手が塞がっていても、Siriで即記録できる<br>赤ちゃんの授乳管理アプリ</p>
-        <a href="#" class="btn-badge" aria-label="App Storeからダウンロード">
-          <img src="./assets/images/appstore-badge.svg" alt="Download on the App Store" class="appstore-badge">
+        <a href="https://apps.apple.com/app/id6761168385" target="_blank" rel="noopener noreferrer" class="btn-badge" aria-label="App Storeからダウンロード">
+          <img src="./assets/images/appstore-badge.svg" data-light-src="./assets/images/appstore-badge.svg" data-dark-src="./assets/images/appstore-badge-white.svg" alt="Download on the App Store" class="appstore-badge">
         </a>
       </div>
       <div class="hero__mockup">
         <div class="phone-frame">
-          <img src="./assets/images/screenshots/today.png" alt="ミルログ 今日の記録画面">
+          <img src="./assets/images/screenshots/today.png" data-light-src="./assets/images/screenshots/today.png" data-dark-src="./assets/images/screenshots/darkmode/today.png" alt="ミルログ 今日の記録画面">
         </div>
       </div>
     </div>
@@ -100,7 +108,7 @@
           <p>記録をし忘れて<br>次の授乳がいつか分からない...</p>
         </div>
       </div>
-      <p class="problem__resolve">ミルログなら、<strong>声だけで記録。次回は自動でお知らせ。</strong></p>
+      <p class="problem__resolve">ミルログなら、<strong>声だけで記録。<br>次回は自動でお知らせ。</strong></p>
     </div>
   </section>
 
@@ -113,12 +121,12 @@
         <div class="feature__body">
           <span class="feature__num">01</span>
           <h3 class="feature__title">Siriで声ひとつ記録</h3>
-          <p class="feature__desc">「Hey Siri、ミルログでミルク120ミリ」のひと言で記録完了。抱っこ中も、深夜も、手を使わずに記録できます。タップ入力派にも、よく使う量のプリセットで素早く対応。
+          <p class="feature__desc">「Hey Siri、ミルログでミルク120ミリ」のひと言で記録完了。<br>抱っこ中も、深夜も、手を使わずに記録できます。<br>タップ入力派にも、よく使う量のプリセットで素早く対応。
           </p>
         </div>
         <div class="feature__screen">
           <div class="phone-frame phone-frame--sm">
-            <img src="./assets/images/screenshots/quickadd.png" alt="クイック入力画面">
+            <img src="./assets/images/screenshots/quickadd.png" data-light-src="./assets/images/screenshots/quickadd.png" data-dark-src="./assets/images/screenshots/darkmode/quickadd.png" alt="クイック入力画面">
           </div>
         </div>
       </div>
@@ -127,11 +135,11 @@
         <div class="feature__body">
           <span class="feature__num">02</span>
           <h3 class="feature__title">今日の状況をひと目で</h3>
-          <p class="feature__desc">合計量・最後の授乳時刻・次回通知時刻を一画面に集約。タイムラインで当日の記録を時系列で確認。タップで編集、長押しで削除と、操作も直感的です。</p>
+          <p class="feature__desc">合計量・最後の授乳時刻・次回通知時刻を一画面に集約。<br>タイムラインで当日の記録を時系列で確認。<br>タップで編集、長押しで削除と、操作も直感的です。</p>
         </div>
         <div class="feature__screen">
           <div class="phone-frame phone-frame--sm">
-            <img src="./assets/images/screenshots/today.png" alt="今日の記録画面">
+            <img src="./assets/images/screenshots/today.png" data-light-src="./assets/images/screenshots/today.png" data-dark-src="./assets/images/screenshots/darkmode/today.png" alt="今日の記録画面">
           </div>
         </div>
       </div>
@@ -140,11 +148,11 @@
         <div class="feature__body">
           <span class="feature__num">03</span>
           <h3 class="feature__title">次の授乳を自動通知</h3>
-          <p class="feature__desc">直近の授乳間隔から次回のタイミングを自動計算して通知。子どもごとに個別スケジュールで管理するから、複数のお子さまがいても安心です。</p>
+          <p class="feature__desc">直近の授乳間隔から次回のタイミングを自動計算して通知。<br>子どもごとに個別スケジュールで管理するから、複数のお子さまがいても安心です。</p>
         </div>
         <div class="feature__screen">
           <div class="phone-frame phone-frame--sm">
-            <img src="./assets/images/screenshots/today.png" alt="次回通知表示">
+            <img src="./assets/images/screenshots/today.png" data-light-src="./assets/images/screenshots/today.png" data-dark-src="./assets/images/screenshots/darkmode/today.png" alt="次回通知表示">
           </div>
         </div>
       </div>
@@ -153,11 +161,11 @@
         <div class="feature__body">
           <span class="feature__num">04</span>
           <h3 class="feature__title">週ごとにふりかえり</h3>
-          <p class="feature__desc">週間カレンダーと授乳量チャートで傾向を把握。ミルクだけでなく、母乳・混合にも対応。1日ごとのメモや気分も記録できる「ひとくちメモ」つき。</p>
+          <p class="feature__desc">週間カレンダーと授乳量チャートで傾向を把握。<br>ミルクだけでなく、母乳・混合にも対応。<br>1日ごとのメモや気分も記録できる「ひとくちメモ」つき。</p>
         </div>
         <div class="feature__screen">
           <div class="phone-frame phone-frame--sm">
-            <img src="./assets/images/screenshots/history.png" alt="ふりかえり画面">
+            <img src="./assets/images/screenshots/history.png" data-light-src="./assets/images/screenshots/history.png" data-dark-src="./assets/images/screenshots/darkmode/history.png" alt="ふりかえり画面">
           </div>
         </div>
       </div>
@@ -171,8 +179,8 @@
       <img src="./assets/images/icon.png" alt="ミルログ" class="cta-section__icon">
       <h2 class="cta-section__title">今日から記録をはじめよう</h2>
       <p class="cta-section__sub">無料でダウンロードできます</p>
-      <a href="#" class="btn-badge" aria-label="App Storeからダウンロード">
-        <img src="./assets/images/appstore-badge.svg" alt="Download on the App Store" class="appstore-badge">
+      <a href="https://apps.apple.com/app/id6761168385" target="_blank" rel="noopener noreferrer" class="btn-badge" aria-label="App Storeからダウンロード">
+        <img src="./assets/images/appstore-badge.svg" data-light-src="./assets/images/appstore-badge.svg" data-dark-src="./assets/images/appstore-badge-white.svg" alt="Download on the App Store" class="appstore-badge">
       </a>
     </div>
   </section>
@@ -191,6 +199,7 @@
   </footer>
 
   <script>
+    // --- Hamburger ---
     const hamburger = document.getElementById('hamburger');
     const menu = document.getElementById('nav-menu');
     const overlay = document.getElementById('nav-overlay');
@@ -214,12 +223,53 @@
     hamburger.addEventListener('click', () => {
       hamburger.classList.contains('is-open') ? closeMenu() : openMenu();
     });
-
     overlay.addEventListener('click', closeMenu);
-
     menu.querySelectorAll('.nav-menu__item').forEach(item => {
       item.addEventListener('click', closeMenu);
     });
+
+    // --- Theme Toggle ---
+    const themeToggle = document.getElementById('theme-toggle');
+    const STORAGE_KEY = 'millog-theme';
+
+    function getSystemTheme() {
+      return window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light';
+    }
+
+    function applyTheme(theme) {
+      document.documentElement.dataset.theme = theme;
+      document.querySelectorAll('img[data-dark-src]').forEach(img => {
+        img.src = theme === 'dark' ? img.dataset.darkSrc : img.dataset.lightSrc;
+      });
+    }
+
+    // 初期テーマ（保存済み優先、なければシステム設定）
+    applyTheme(localStorage.getItem(STORAGE_KEY) || getSystemTheme());
+
+    themeToggle.addEventListener('click', () => {
+      const next = document.documentElement.dataset.theme === 'dark' ? 'light' : 'dark';
+      localStorage.setItem(STORAGE_KEY, next);
+      applyTheme(next);
+    });
+
+    // システム設定変更を検知（手動設定がない場合のみ追従）
+    window.matchMedia('(prefers-color-scheme: dark)').addEventListener('change', e => {
+      if (!localStorage.getItem(STORAGE_KEY)) {
+        applyTheme(e.matches ? 'dark' : 'light');
+      }
+    });
+
+    // --- Scroll Reveal ---
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.2 });
+
+    document.querySelectorAll('.feature__body').forEach(el => observer.observe(el));
   </script>
 
 </body>
